@@ -1,0 +1,115 @@
+@media (max-width: 992px)
+  .container
+    width: 95%
+    margin: 0px 10px
+    
+  .hero
+    &-block
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column
+    &-text
+      display: flex
+      flex-direction: column
+      &__title
+        padding-top: 20px
+      &__subtitle
+        padding: 30px 0
+        font-size: 20px
+        +bold
+        line-height: 1
+        color: $text-color
+      
+      
+    &-image
+      &__image
+         margin: 0
+    
+    &-list
+      margin: 0
+      padding: 0
+    
+      &__item
+        list-style-type: none
+        display: flex
+        align-items: center
+        margin: 30px 0
+
+        &:last-child
+          margin-bottom: 30px
+      &__image
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-basis: 40px
+        height: 40px
+        border: 2px solid $main-color
+        border-radius: 50%
+        flex-grow: 0
+      
+      
+      &__text
+        display: flex
+        align-items: center
+        flex-basis: 70%
+        padding-left: 31px
+        font-size: 14px
+        font-weight: 400
+        height: 40px
+        line-height: 1.6
+  .offer
+    &-text
+      width: 100%
+    &-form
+      width: 100%
+      display: flex
+      flex-direction: column 
+      &__name
+        width: 100%
+        margin: 10px 0
+        
+      &__phone
+        width: 100%
+        margin: 10px 0
+        margin-right: 10px
+    .button
+      width: 100%
+      margin: 10px 0 
+      padding: 25px
+    &-call
+      flex-direction: column
+      &__callback
+        width: 110%
+        
+    &-usercall
+      flex-direction: column
+      padding: 0
+      &__text
+        padding: unset
+        margin-right: 10px
+  .portfolio
+    &__tite
+      font-size: 30px
+      width: 500px
+  .price
+    text-align: center
+    
+  .brif
+    &__form
+      margin-left: 50px
+    .form
+      &-block
+        &__input
+          display: block
+          width: 100%
+    &__interview
+      flex-basis: 80% 
+  .interview
+    &__subtitle
+      margin-bottom: 0     
+  .footer
+    .contacts
+      &-space
+        flex-basis: 60%
+      &-block
+        flex-basis: 40%  

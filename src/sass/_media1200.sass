@@ -1,0 +1,189 @@
+@media (max-width: 1200px)
+  .container
+    width: 990px
+    margin: auto 
+  .navbar
+    padding: 8px 0px
+    &-block
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__info
+      display: flex
+      margin-top: -4px
+      
+    
+    
+    &__contacts
+      margin-right: 10px
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      text-align: right
+    
+    &__address
+      font-size: 13px
+      +reg
+      color: $text-color
+    
+    &__phone
+      font-size: 20px
+      +large
+      text-decoration: none
+      color: $text-color
+    
+    &__button
+      +bold 
+      padding: 18px 30px
+      margin-left: 30px
+  .hero
+    &-text
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column
+      &__title
+        padding-top: 20px
+      &__subtitle
+        font-size: 20px
+        +bold
+        line-height: 1
+        color: $text-color
+    &-image
+      &__image
+         margin: 0
+    &-list
+      margin: 0
+      padding: 0
+      &__item
+        list-style-type: none
+        display: flex
+        align-items: center
+        margin-bottom: 30px
+        &:last-child
+          margin-bottom: 30px
+      &__image
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-basis: 40px
+        height: 40px
+        border: 2px solid $main-color
+        border-radius: 50%
+        flex-grow: 0
+      &__text
+        display: flex
+        align-items: center
+        flex-basis: 70%
+        padding-left: 31px
+        font-size: 14px
+        font-weight: 400
+        height: 40px
+        line-height: 1.6
+  .offer
+    background-image: url("../img/bg-image.png")
+    background-repeat: no-repeat
+    background-position: center right 
+    background-size: cover
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      background-color: $light-bgc
+      width: 50%
+      height: 100% 
+    &-text
+      width: 80% 
+    
+    &-form
+      width: 90%
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+
+    &-submit
+      
+      &__button
+        padding: 0
+        font-size: 16px
+        +bold
+        line-height: 18px
+        max-width: 400px
+        width: 100%      
+    .button
+      padding: 26px 50px
+      width: 100%
+  .input
+    border-radius: 10px
+    border: 1px solid $unactive
+    height: 4em
+    width: 13.35em 
+  
+    &-text
+      width: 100%
+    &-form
+      width: 100%
+      display: flex
+      flex-direction: column 
+      &__name
+        width: 100%
+        margin: 10px 0
+        
+      &__phone
+        width: 100%
+        margin: 10px 0
+        margin-right: 10px
+  
+  
+
+    
+    &-call
+      flex-direction: column
+      &__callback
+        width: 110%
+        
+    &-usercall
+      flex-direction: row
+      padding: 0
+      &__text
+        padding: unset
+        margin-right: 10px
+  .form
+    max-width: 368px
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-left: 2px
+    &__title
+      padding: 5px 2px
+      margin: 0
+
+      font-size: 22px
+      +bold 
+      line-height: 33px
+      text-align: center
+    &__subtitle
+      padding: 31px 0
+      font-size: 16px
+      +reg
+      line-height: 35px
+      margin-bottom: 11px
+    &-block
+      margin-right: 6px
+      display: flex
+      flex-direction: column
+      width: 100%
+      align-items: center
+      position: relative
+      .label
+        width: 100%
+      &__input
+        max-height: 65px
+        margin-bottom: 15px
+        display: block
+        width: 100%
+        padding: 23px
+        position: relative
+  

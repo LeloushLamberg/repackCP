@@ -1,0 +1,66 @@
+main
+  background-color: $darck-bgc
+.hero
+  &-block
+    display: flex
+    justify-content: space-between
+    &_padding
+      padding-top: 44px
+  &-text
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column  
+    justify-content: flex-start
+    
+    &__title
+      
+      padding: 30px 0
+      margin-left: -2px
+      font-size:  2.563em
+      +bold
+      line-height: 55px
+      color: $text-color
+     
+      
+    &__subtitle
+      padding: 20px 0
+      font-size: 20px
+      +bold
+      line-height: 0
+      color: $text-color
+      
+  &-list
+    margin: 0
+    padding: 0
+    &_padding
+      padding: 60px 0
+    &__item
+      list-style-type: none
+      display: flex
+      align-items: center
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0px
+    &__image
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-basis: 40px
+      height: 40px
+      border: 2px solid $main-color
+      border-radius: 50%
+      flex-grow: 0
+    &__text
+      display: flex
+      align-items: center
+      flex-basis: 50%
+      padding-left: 31px
+      font-size: 14px
+      font-weight: 400
+      height: 40px
+      line-height: 1.7
+    &__space
+      flex-basis: auto
+  &-image
+    &__image
+      margin-right: -40px

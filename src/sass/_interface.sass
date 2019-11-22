@@ -1,0 +1,63 @@
+*
+  box-sizing: border-box
+  outline: none
+  
+body
+  font-family: "Museo Sans light"
+  font-weight: 300
+  background-color: $light-bgc
+  margin: auto
+.container
+  width: 1170px
+  margin: auto
+h1
+  margin: 0
+a
+  text-decoration: none
+  color: $text-color
+
+.button 
+  
+  border-radius: 10px
+  border: none
+  background-color: $main-color
+  font-size: 13px
+  +bold
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+  &:active,&:focus
+    outline: none;
+.section
+  padding: 90px 0 0 0
+  &-title
+    margin: auto
+    text-align: center
+    width: 500px
+  
+.input
+  border-radius: 10px
+  border: 1px solid $unactive
+  height: 4.3em
+  width: 16.000em
+.label
+  display: flex
+  flex-direction: column
+
+input
+  outline: none
+  &:focus
+    border: 1px solid #ffd200
+  &:-webkit-autofill 
+    -webkit-animation-name: autofill
+    -webkit-animation-fill-mode: both
+@-webkit-keyframes autofill 
+  to 
+    color: inherit
+    background: transparent
+
+  
+ 
+
+  
+

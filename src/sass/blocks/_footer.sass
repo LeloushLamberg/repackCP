@@ -1,0 +1,36 @@
+.footer
+  position: relative
+.map
+  width: 50%
+  position: absolute
+  left: 0
+  top: 0
+.contacts
+  display: flex
+  justify-content: space-between
+  &-space  
+    flex-basis: 50%
+  &-block
+    max-width: 368px
+    flex-basis: 50%
+    
+  &__title
+    font-size: 22px
+    line-height: 33px
+    +bold 
+    padding-top: 70px
+    margin-bottom: 35px
+  &-list
+    display: flex
+    flex-direction: column
+    justify-content: center
+    list-style: none
+    padding: 0 
+    &__item
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      margin-bottom: 35px
+    &__text
+      flex-basis: 90%
+      line-height: 23px
