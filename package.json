@@ -4,7 +4,8 @@
   "description": "перезапись дистрибутива с помощью parcel",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/index.js",
+    "build": "parcel build src/index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/LeloushLamberg/repackCP/issues"
   },
-  "homepage": "https://github.com/LeloushLamberg/repackCP#readme"
+  "homepage": "https://github.com/LeloushLamberg/repackCP#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }
